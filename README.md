@@ -6,14 +6,16 @@ Extraction:
 Transformation:
     Using pandas, we read the CSV into a workable dataframe.
         
-        
+        /Users/tommysmacbook/Desktop/Screen Shot 2022-12-21 at 4.37.37 PM.png
 
         This dataframe contained many unnecessary columns in relation to our project so it was cleaned out leaving us with a dataframe of only the airport names and airport ratings. The data was collected by individual rating scores, so each airport had multiple entries. To best capture an airport's overall score was to get the mean of these entries. 
         
+/Users/tommysmacbook/Desktop/Screen Shot 2022-12-21 at 4.39.18 PM.png
         
      
         At this point we dropped all airports with NaN ratings. We also chose to focus on airports with an average overall rating of at least 5 out of 10. All airport names were then put into a list. With our final goal of gathering hotel information nearest to this airports, we needed to find the latitude and longitude for each individual airport. In order to do this we used a loop through the Google Geocode API.
         
+/Users/tommysmacbook/Desktop/Screen Shot 2022-12-21 at 4.48.10 PM.png
         
 
         This loop gave us a list of latitudes and longitudes for each airport while also dropping airports that 'failed' from the dataframe. The next step was to use Google Places API to grab the hotel name and rating. Using the latitudes and longitudes found earlier, a loop was created to capture a list of each hotel and its rating.
