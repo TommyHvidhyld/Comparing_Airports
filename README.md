@@ -1,5 +1,7 @@
 # Comparing Airports and Their Hospitality
 
+By: Tommy Hvidhyld and Chloe Li
+
 ## Extraction:
 
 In order to compare airports throughout the world and the quality of hospitality that is nearest to these airports, we extracted two sets of data. The first set of data is a CSV file of airport ratings. This CSV file was taken from the "Awesome Public Datasets" located on github. The second set of data was produced by an API call from Google Places in order to get the first hotel names and respective ratings that match with each airport.
